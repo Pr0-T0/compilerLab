@@ -12,7 +12,7 @@
 ">" {return GT;}
 "<=" {return LTEQ;}
 ">=" {return GTEQ;}
-[=,{},();] {return *yytext;}
+[=,{}();] {return yytext[0];}
 [a-zA-Z_][a-zA-Z0-9_]* {return ID;}
 [0-9]+ {return NUM;}
 %%

@@ -779,7 +779,7 @@ YY_RULE_SETUP
 case 10:
 YY_RULE_SETUP
 #line 15 "exp.l"
-{return *yytext;}
+{return yytext[0];}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
